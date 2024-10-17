@@ -1,6 +1,66 @@
-.pokeball{
+body{
+    display: grid;
+    place-items: center;
+    font-family: "Pokemon Solid";
+    color: rgb(253, 246, 98);
+    -webkit-text-stroke: 1px blue;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+h1{
+    font-size: 400%;
+}
+
+
+#pokeball{
     display: block;
     width: 200px;
     height: 200px;
-    background-color: red;
+    background: radial-gradient(white 20px, black 21px 22px, white 23px 28px, black 29px 35px, transparent 36px), 
+    linear-gradient(red 0px 90px, black 91px 109px, white 110px 200px);
+    border: solid black 10px;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: inset -1.5em -1em 0 0 rgba(204, 203, 203, .2);
+    animation: fall .5s ,
+    shake 1.25s  1.5s 3;
 }
+
+@keyframes shake {
+    0% {
+      transform: translateX(0) rotate(0);
+    }
+    5% {
+      transform: translateX(-10px) rotate(-20deg);
+    }
+    30% {
+      transform: translateX(10px) rotate(20deg);
+    }
+    50% {
+      transform: translateX(-10px) rotate(-10deg);
+    }
+    60% {
+      transform: translateX(10px) rotate(10deg);
+    }
+    100% {
+      transform: translateX(0) rotate(0);
+    }
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(-1000%);
+    }
+    60% {
+      transform: translateY(0);
+    }
+    80% {
+      transform: translateY(-10%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+
+  }
+  
