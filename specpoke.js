@@ -8,8 +8,17 @@ document.addEventListener("DOMContentLoaded", async()=>{
     const specdata = await getPoke("pikachu")
     const picElement = document.getElementById("main1")
     const infoElement = document.getElementById("main2")
-    picElement.innerHTML = `<img src= ${specdata.sprites.other.home.front_default}>`
-                            `<img src= ${specdata.sprites.other.official-artwork.front_default}>`
+    picElement.innerHTML = `<img src= ${specdata.sprites.other.home.front_default}>
+                            <img src= ${specdata.sprites.other.home.front_shiny}>
+                            <img src= ${specdata.sprites.other.home.front_default}>
+                            <img src= ${specdata.sprites.other.home.front_shiny}>
+                            <img src= ${specdata.sprites.other.home.front_default}>
+                            <img src= ${specdata.sprites.other.home.front_shiny}>
+                            <img src= ${specdata.sprites.other.home.front_default}>
+                            <img src= ${specdata.sprites.other.home.front_shiny}>
+                            <img src= ${specdata.sprites.other.home.front_default}>
+                            <img src= ${specdata.sprites.other.home.front_shiny}>
+                            <img src= ${specdata.sprites.other.home.front_default}>`
     infoElement.innerHTML = `<h2>Name: ${specdata.name}</h2>
                             <h4>Moves:</h4>
                             <ul>
