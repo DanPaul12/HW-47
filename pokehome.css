@@ -63,4 +63,16 @@ h1{
     }
 
   }
+
+button{
+    margin: 2em;
+    padding: 2em;
+    margin-top: 4em;
+    border-radius: 25px;
+    background-color: rgb(242, 230, 115);
+    border: solid 2em rgb(86, 108, 245);
+    font-family: "Pokemon Solid";
+    font-size: medium;
+    color: rgb(76, 76, 246);
+}
   
